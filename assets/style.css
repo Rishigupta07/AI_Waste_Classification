@@ -1,0 +1,247 @@
+/* Smooth fade-in animation */
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .fade-in {
+        animation: fadeIn 0.8s ease-out;
+    }
+    
+    /* Modern gradient backgrounds */
+    .gradient-bg {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .main-header {
+        font-size: 3.5rem;
+        color: #2E8B57;
+        text-align: center;
+        margin-bottom: 1rem;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        animation: fadeIn 1s ease-out;
+    }
+    
+    .sub-header {
+        font-size: 1.5rem;
+        color: #555;
+        text-align: center;
+        margin-bottom: 2rem;
+        animation: fadeIn 1.2s ease-out;
+    }
+    
+    .prediction-card {
+        padding: 25px;
+        border-radius: 15px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        margin: 15px 0;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        animation: fadeIn 0.6s ease-out;
+        transition: all 0.3s ease;
+    }
+    
+    .prediction-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    }
+    
+    .recycling-card {
+        padding: 20px;
+        border-radius: 15px;
+        background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        color: white;
+        margin: 15px 0;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        animation: fadeIn 0.7s ease-out;
+        transition: all 0.3s ease;
+    }
+    
+    .recycling-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+    
+    .info-card {
+        padding: 20px;
+        border-radius: 15px;
+        background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        color: white;
+        margin: 10px 0;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    
+    .camera-card {
+        padding: 25px;
+        border-radius: 15px;
+        background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+        color: white;
+        margin: 15px 0;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        animation: fadeIn 0.5s ease-out;
+        border: 3px solid #2E8B57;
+    }
+    
+    .upload-box {
+        border: 2px dashed #2E8B57;
+        border-radius: 10px;
+        padding: 30px;
+        text-align: center;
+        background-color: #f8fff8;
+        margin: 20px 0;
+        animation: fadeIn 0.5s ease-out;
+        transition: all 0.3s ease;
+    }
+    
+    .upload-box:hover {
+        border-color: #3CB371;
+        background-color: #f0fff0;
+    }
+    
+    .confidence-high { 
+        color: #28a745; 
+        font-weight: bold;
+        animation: pulse 2s infinite;
+    }
+    
+    .confidence-medium { 
+        color: #ffc107; 
+        font-weight: bold;
+    }
+    
+    .confidence-low { 
+        color: #dc3545; 
+        font-weight: bold;
+    }
+    
+    @keyframes pulse {
+        0% { opacity: 1; }
+        50% { opacity: 0.7; }
+        100% { opacity: 1; }
+    }
+    
+    .stButton button {
+        background: linear-gradient(135deg, #2E8B57 0%, #3CB371 100%);
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        border-radius: 25px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        width: 100%;
+        animation: fadeIn 0.9s ease-out;
+    }
+    
+    .stButton button:hover {
+        transform: translateY(-2px) scale(1.02);
+        box-shadow: 0 8px 20px rgba(46, 139, 87, 0.4);
+    }
+    
+    .camera-button {
+        background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%) !important;
+    }
+    
+    .camera-button:hover {
+        box-shadow: 0 8px 20px rgba(67, 233, 123, 0.4) !important;
+    }
+    
+    .success-box {
+        padding: 15px;
+        border-radius: 10px;
+        background-color: #d4edda;
+        border: 1px solid #c3e6cb;
+        color: #155724;
+        margin: 10px 0;
+        animation: fadeIn 0.5s ease-out;
+    }
+    
+    .warning-box {
+        padding: 15px;
+        border-radius: 10px;
+        background-color: #fff3cd;
+        border: 1px solid #ffeaa7;
+        color: #856404;
+        margin: 10px 0;
+        animation: fadeIn 0.5s ease-out;
+    }
+    
+    .hazardous-card {
+        padding: 20px;
+        border-radius: 15px;
+        background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+        color: white;
+        margin: 15px 0;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        border: 2px solid #ff0000;
+        animation: fadeIn 0.6s ease-out;
+        transition: all 0.3s ease;
+    }
+    
+    .hazardous-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(255, 0, 0, 0.2);
+    }
+    
+    .error-box {
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #f8d7da;
+        border: 1px solid #f5c6cb;
+        color: #721c24;
+        margin: 20px 0;
+        animation: fadeIn 0.5s ease-out;
+    }
+    
+    /* Camera animation */
+    @keyframes cameraPulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+        100% { transform: scale(1); }
+    }
+    
+    .camera-pulse {
+        animation: cameraPulse 2s infinite;
+    }
+    
+    /* Progress animation */
+    @keyframes progressAnimation {
+        0% { width: 0%; }
+        100% { width: 100%; }
+    }
+    
+    .progress-animated {
+        animation: progressAnimation 1.5s ease-in-out;
+    }
+    
+    /* Floating animation for main button */
+    @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-5px); }
+        100% { transform: translateY(0px); }
+    }
+    
+    .float-animation {
+        animation: float 3s ease-in-out infinite;
+    }
+    
+    /* Camera view styling */
+    .camera-view {
+        border-radius: 15px;
+        overflow: hidden;
+        margin: 1rem 0;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+    
+    /* Model info card */
+    .model-info-card {
+        padding: 20px;
+        border-radius: 15px;
+        background: linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%);
+        color: white;
+        margin: 15px 0;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
